@@ -121,7 +121,7 @@ function App() {
         position: "Student Intern",
         duration: "Jan 25 - Present",
         description:
-          "Exploring the development of AI-driven language translation solutions and the implementation of chatbots to enhance workplace efficiency.",
+          "Exploring the development of AI-driven language translation solutions and the implementation of chatbot to enhance workplace efficiency.",
       },
       {
         company: "SIEMENS DISW, Pune",
