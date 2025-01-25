@@ -118,8 +118,15 @@ function App() {
     experiences: [
       {
         company: "SIEMENS DISW, Pune",
+        position: "Student Intern",
+        duration: "Jan 25 - Present",
+        description:
+          "Exploring the development of AI-driven language translation solutions and the implementation of chatbots to enhance workplace efficiency.",
+      },
+      {
+        company: "SIEMENS DISW, Pune",
         position: "Summer Intern",
-        duration: "Jun 24 - Present",
+        duration: "Jun 24 - July 24",
         description:
           "Working with the team on the real-time project to digitalise the process and make the work easy.",
       },
@@ -314,3 +321,104 @@ function App() {
 }
 
 export default App;
+
+// import React from "react";
+
+// const UserProfile = ({ username, joinDate, streak, progress }) => (
+//   <div className="flex items-center space-x-4 mb-4">
+//     <div className="w-12 h-12 bg-gray-600 rounded-full"></div>
+//     <div>
+//       <h2 className="text-xl font-bold">{username}</h2>
+//       <p className="text-sm text-gray-400">Joined {joinDate}</p>
+//       <p className="text-sm text-gray-400">Current streak: {streak} days</p>
+//     </div>
+//   </div>
+// );
+
+// const ProgressBar = ({ progress }) => (
+//   <div className="w-full bg-gray-700 rounded-full h-2.5 mb-4">
+//     <div
+//       className="bg-yellow-400 h-2.5 rounded-full"
+//       style={{ width: `${progress}%` }}
+//     ></div>
+//   </div>
+// );
+
+// const Stats = ({ tests, timeTyping }) => (
+//   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-4">
+//     <div className="bg-gray-800 p-4 rounded">
+//       <h3 className="text-sm text-gray-400">Tests started</h3>
+//       <p className="text-2xl font-bold">{tests}</p>
+//     </div>
+//     <div className="bg-gray-800 p-4 rounded">
+//       <h3 className="text-sm text-gray-400">Tests completed</h3>
+//       <p className="text-2xl font-bold">{tests}</p>
+//     </div>
+//     <div className="bg-gray-800 p-4 rounded col-span-2 sm:col-span-1">
+//       <h3 className="text-sm text-gray-400">Time typing</h3>
+//       <p className="text-2xl font-bold">{timeTyping}</p>
+//     </div>
+//   </div>
+// );
+
+// const Leaderboards = ({ ranks }) => (
+//   <div className="mb-4">
+//     <h3 className="text-lg font-semibold mb-2">
+//       All-Time English Leaderboards
+//     </h3>
+//     <div className="grid grid-cols-2 gap-4">
+//       {ranks.map((rank) => (
+//         <div key={rank.time} className="bg-gray-800 p-4 rounded">
+//           <div className="flex justify-between">
+//             <span>{rank.time} seconds</span>
+//             <span>Top {rank.percentile}%</span>
+//           </div>
+//           <p className="text-xl font-bold">{rank.position}th</p>
+//         </div>
+//       ))}
+//     </div>
+//   </div>
+// );
+
+// const SpeedStats = ({ speeds }) => (
+//   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+//     {speeds.map((speed) => (
+//       <div key={speed.time} className="bg-gray-800 p-4 rounded">
+//         <h4 className="text-sm text-gray-400">{speed.time} seconds</h4>
+//         <p className="text-2xl font-bold">{speed.wpm}</p>
+//         <p className="text-sm">{speed.accuracy}%</p>
+//       </div>
+//     ))}
+//   </div>
+// );
+
+// const App = () => (
+//   <div className="bg-gray-900 text-white min-h-screen p-6">
+//     <div className="max-w-3xl mx-auto">
+//       <UserProfile
+//         username="namoji"
+//         joinDate="18 Mar 2024"
+//         streak={2}
+//         progress={60}
+//       />
+//       <ProgressBar progress={60} />
+//       <Stats tests={530} timeTyping="04:59:51" />
+//       <Leaderboards
+//         ranks={[
+//           { time: 15, percentile: 37.99, position: 120010 },
+//           { time: 60, percentile: 28.65, position: 89493 },
+//         ]}
+//       />
+//       <SpeedStats
+//         speeds={[
+//           { time: 15, wpm: 108, accuracy: 100 },
+//           { time: 30, wpm: 99, accuracy: 97 },
+//           { time: 60, wpm: 93, accuracy: 97 },
+//           { time: 120, wpm: 86, accuracy: 93 },
+//         ]}
+//       />
+//     </div>
+//   </div>
+// );
+
+// export default App;

@@ -28,10 +28,10 @@ const Contact = () => {
     emailjs
       .sendForm(
         // Replace with your EmailJS user ID
-        "service_k3d54yf",
-        "template_tlbvz4g",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         form.current,
-        "C-fzQbqyRdcMwrlSi"
+        import.meta.env.VITE_APP_PASSWORD
       )
       .then(
         (result) => {
